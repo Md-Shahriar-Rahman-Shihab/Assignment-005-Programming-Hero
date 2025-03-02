@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .poppins-font{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="poppins-font bg-[#f4f7ff] ">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="md:container mx-auto pt-4 pb-4">
+            <nav>
+                <div class="navbar bg-base-100 rounded-2xl">
+                  <div class="flex-1">
+                    <a class="btn btn-ghost text-4xl">
+                      <img src="./assets/logo.png" alt="">
+                      <h1 class="font-light">Dev<span class="font-extrabold">Board</span></h1>
+                    </a>
+                   </div>
+                   <button id="backToDesk" class="btn bg-blue-700 text-white p-4">Back to Desk</button>
+                </div>
+              </nav>
+    </header>
+
+    <main>
+        <h1 class="text-center text-3xl font-bold mt-2">Blogs</h1><br>
+        <section class="md:container mx-auto rounded-2xl gap-8 ">
+            <!-- Question 1 -->
+            <section class=" bg-white">
+                <section class="p-6">
+                    <p class="mb-4 font-semibold flex items-center text-xl">Question-1: What are the different ways to select an element in the DOM?
+                    </p>
+                    <hr>
+                    <p class="mt-4 opacity-50">The different ways to select an element in the DOM are getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll.</p>
+                </section>
+            </section>
+             <!-- Question 2 -->
+             <section class=" bg-white mt-4">
+                <section class="p-6">
+                    <p class="mb-4 font-semibold flex items-center text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </p>
+                    <hr>
+                    <p class="mt-4 opacity-50">innerHTML manipulates raw HTML content, innerText returns visible text as rendered (ignoring hidden elements), while textContent retrieves all text content, including hidden text, without parsing HTML tags.</p>
+                </section>
+            </section>
+             <!-- Question 3 -->
+             <section class=" bg-white mt-4">
+                <section class="p-6">
+                    <p class="mb-4 font-semibold flex items-center text-xl">Question-3: What is event delegation in the DOM?
+                    </p>
+                    <hr>
+                    <p class="mt-4 opacity-50">Event delegation handles events on child elements by attaching a single listener to a parent element, leveraging event bubbling to manage dynamic or multiple elements efficiently.</p>
+                </section>
+            </section>
+             <!-- Question 4 -->
+             <section class=" bg-white mt-4">
+                <section class="p-6">
+                    <p class="mb-4 font-semibold flex items-center text-xl">Question-4: What is event bubbling in the DOM?
+                    </p>
+                    <hr>
+                    <p class="mt-4 opacity-50">Event bubbling is when an event triggered on a DOM element propagates upward through its ancestor elements, letting parent nodes detect and handle events from their children.</p>
+                </section>
+            </section>
+             <!-- Question 5 -->
+             <section class="bg-white mt-4">
+                <section class="p-6">
+                    <p class="mb-4 font-semibold flex items-center text-xl">Question-5: How do you create, add, and remove elements using JavaScript?
+                    </p>
+                    <hr>
+                    <p class="mt-4 opacity-50">To create elements, use document.createElement(), add them with methods like appendChild() or insertBefore(), and remove them via removeChild() on their parent or element.remove().</p>
+                </section>
+            </section>
+        </section>  
+    </main>
+
+    <script src="./script/home.js"></script>
+</body>
+</html>
